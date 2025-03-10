@@ -1,0 +1,146 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(/the-town-background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 7rem;
+  gap: 3rem;
+  font-family: Cursive;
+}
+
+.nav :first-child {
+  margin-right: auto;
+}
+
+.nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #4169e1;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+}
+
+.menu-icon {
+  display: none;
+  width: 6rem;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+.menu-links {
+  display: none;
+}
+
+.menu-open {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  right: 5%;
+  z-index: 1;
+  position: absolute;
+  top: 55%;
+  transition: all 0.3s ease;
+}
+
+.hero-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  gap: 1.4rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  transform: translateY(-40px);
+}
+
+.hero--head {
+  font-size: 4.8rem;
+  font-weight: 500;
+}
+
+.hero--desc {
+  font-size: 1.6rem;
+}
+
+.hero--author {
+  font-size: 1.4rem;
+}
+
+.author {
+  color: #4169e1;
+  font-weight: 700;
+}
+
+@media (max-width: 62em) {
+  .nav a {
+    font-size: 3rem;
+  }
+  .hero-content {
+    gap: 3rem;
+  }
+  .hero--head {
+    font-size: 9rem;
+  }
+  .hero--desc {
+    font-size: 5rem;
+  }
+  .hero--author {
+    font-size: 4rem;
+  }
+  .list-link {
+    display: none;
+  }
+  .nav {
+    gap: 0;
+  }
+  .nav :first-child {
+    font-size: 5rem;
+    margin-right: auto;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 32em) {
+  .nav a {
+    font-size: 3rem;
+  }
+  .hero-content {
+    gap: 3rem;
+  }
+  .hero--head {
+    font-size: 8rem;
+  }
+  .hero--desc {
+    font-size: 4.2rem;
+  }
+  .hero--author {
+    font-size: 3.2rem;
+  }
+}

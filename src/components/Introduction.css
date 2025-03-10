@@ -1,0 +1,156 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3rem;
+  padding: 7rem 0;
+}
+.intro-img {
+  max-width: 40%;
+  width: 100%;
+}
+
+.intro-text {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header {
+  font-size: 4rem;
+  font-weight: 500;
+  color: #4169e1;
+}
+
+.intro-p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #777;
+  line-height: 1.8;
+  max-width: 75%;
+}
+
+.intro-p span {
+  color: #444;
+}
+
+.intro-p a {
+  color: #4169e1;
+  font-weight: 700;
+}
+
+.intro-p a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.intro-btn {
+  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  background-color: #4169e1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.intro-btn:hover {
+  background-color: #364d79;
+}
+
+.work {
+  display: flex;
+  padding: 7rem 0;
+  background-image: linear-gradient(180deg, #e3987f, #5c648c);
+}
+
+.work-container {
+  display: flex;
+  align-items: center;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  text-align: center;
+}
+
+.work-item h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.work-item a {
+  font-size: 2rem;
+  color: #4169e1;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.work-item a:hover {
+  color: #364d79;
+}
+
+.work-item p {
+  font-size: 1.4rem;
+  color: #cdc1c1;
+  line-height: 1.5;
+  width: 90%;
+}
+
+@media (max-width: 48em) {
+  .intro {
+    flex-direction: column;
+  }
+  .intro-img {
+    max-width: 60%;
+    justify-self: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+  .header {
+    font-size: 5rem;
+  }
+
+  .intro-p,
+  .intro-btn {
+    font-size: 2rem;
+  }
+  .work-container {
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .intro-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .work-item h1 {
+    font-size: 5rem;
+  }
+
+  .work-item a {
+    font-size: 3rem;
+  }
+  .work-item p {
+    font-size: 2.4rem;
+  }
+}

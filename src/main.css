@@ -1,0 +1,40 @@
+html {
+  font-size: 67.5%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@media (max-width: 62em) {
+  .container {
+    width: 93vw;
+  }
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 48em) {
+  .container {
+    width: 95vw;
+  }
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 32em) {
+  html {
+    font-size: 43.75%;
+  }
+}
