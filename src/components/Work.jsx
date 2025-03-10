@@ -1,4 +1,4 @@
-import "./work.css";
+import "./Work.css";
 const Work = () => {
   return (
     <section className="our-work container">
